@@ -1,0 +1,20 @@
+@main-color : blue;
+@text-color: red;
+.header {
+    background-color: @main-color;
+    font-size: 20px;
+    line-height: 1.5;
+
+    span {
+        display: block;
+    }
+
+    strong{
+        font-size: 15px;
+    }
+}
+
+.test{
+    .header;
+    color: @text-color;
+}
